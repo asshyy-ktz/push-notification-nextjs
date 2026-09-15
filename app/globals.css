@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  @apply bg-gray-50 text-gray-900;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 rounded-full;
+}
+
+.badge {
+  @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium;
+}
+
+.badge-draft {
+  @apply bg-gray-100 text-gray-700;
+}
+
+.badge-scheduled {
+  @apply bg-amber-100 text-amber-800;
+}
+
+.badge-sent {
+  @apply bg-emerald-100 text-emerald-800;
+}
+
+.card {
+  @apply bg-white rounded-xl border border-gray-200 shadow-card;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center gap-1.5 rounded-lg px-3.5 py-2 text-sm font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.btn-primary {
+  @apply btn bg-brand-600 text-white hover:bg-brand-700;
+}
+
+.btn-secondary {
+  @apply btn bg-white text-gray-700 border border-gray-300 hover:bg-gray-50;
+}
+
+.btn-ghost {
+  @apply btn text-gray-600 hover:bg-gray-100;
+}
+
+.input {
+  @apply w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500;
+}
+
+.label {
+  @apply block text-sm font-medium text-gray-700 mb-1;
+}
